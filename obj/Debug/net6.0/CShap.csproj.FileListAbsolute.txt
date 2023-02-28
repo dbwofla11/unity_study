@@ -1,0 +1,15 @@
+C:\Users\유재림\source\repos\CShap\bin\Debug\net6.0\CShap.exe
+C:\Users\유재림\source\repos\CShap\bin\Debug\net6.0\CShap.deps.json
+C:\Users\유재림\source\repos\CShap\bin\Debug\net6.0\CShap.runtimeconfig.json
+C:\Users\유재림\source\repos\CShap\bin\Debug\net6.0\CShap.dll
+C:\Users\유재림\source\repos\CShap\bin\Debug\net6.0\CShap.pdb
+C:\Users\유재림\source\repos\CShap\obj\Debug\net6.0\CShap.csproj.AssemblyReference.cache
+C:\Users\유재림\source\repos\CShap\obj\Debug\net6.0\CShap.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\유재림\source\repos\CShap\obj\Debug\net6.0\CShap.AssemblyInfoInputs.cache
+C:\Users\유재림\source\repos\CShap\obj\Debug\net6.0\CShap.AssemblyInfo.cs
+C:\Users\유재림\source\repos\CShap\obj\Debug\net6.0\CShap.csproj.CoreCompileInputs.cache
+C:\Users\유재림\source\repos\CShap\obj\Debug\net6.0\CShap.dll
+C:\Users\유재림\source\repos\CShap\obj\Debug\net6.0\refint\CShap.dll
+C:\Users\유재림\source\repos\CShap\obj\Debug\net6.0\CShap.pdb
+C:\Users\유재림\source\repos\CShap\obj\Debug\net6.0\CShap.genruntimeconfig.cache
+C:\Users\유재림\source\repos\CShap\obj\Debug\net6.0\ref\CShap.dll
