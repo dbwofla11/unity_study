@@ -8,10 +8,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="if_practice.cs" />
     <Compile Remove="Program.cs" />
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="if_practice.cs" />
     <None Include="Program.cs" />
   </ItemGroup>
 
