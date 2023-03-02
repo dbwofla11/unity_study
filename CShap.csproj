@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="C_SHAP기초문법\if_practice.cs" />
     <Compile Remove="for_practice.cs" />
     <Compile Remove="function_pre.cs" />
     <Compile Remove="if_practice.cs" />
@@ -15,10 +16,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="for_practice.cs" />
-    <None Include="function_pre.cs" />
-    <None Include="if_practice.cs" />
-    <None Include="Program.cs" />
+    <None Include="C_SHAP기초문법\for_practice.cs" />
+    <None Include="C_SHAP기초문법\if_practice.cs" />
+    <None Include="C_SHAP기초문법\Program.cs" />
   </ItemGroup>
 
 </Project>

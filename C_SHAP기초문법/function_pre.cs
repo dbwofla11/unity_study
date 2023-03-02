@@ -50,7 +50,7 @@ namespace CShap
         }
 
 
-        static void Main(string[] args)
+        static void function1(string[] args)
         {
             Console.WriteLine("cw tap tap 누르면 이게 나옴 ");
             

@@ -8,7 +8,7 @@ namespace CShap
 {
     internal class for_practice
     {
-        static void Main(string[] args)
+        static void for_pre()
         {
             // while 문 역시 c언어와 동일 
             int cnt = 1;
