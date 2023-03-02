@@ -32,7 +32,7 @@ namespace CShap
             {
                 for(int k = 1; k <= i; k++)
                 {
-                    Console.Write("*");
+                    Console.Write("*"); // C# 에서 Write 와 Writeline 은 다름 전자는 옆에 쓰는 것이고 후자는 줄을 바꾸면서 쓰는 거 
                 }
                 Console.WriteLine("");
             }
