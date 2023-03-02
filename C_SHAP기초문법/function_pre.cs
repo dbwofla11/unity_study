@@ -77,8 +77,12 @@ namespace CShap
             int r1;
             int r2;
             function_pre.out_test(10 , 10 , out r1 , out r2);
-            Console.WriteLine($"r1 r2 출력 ㅣ {r1} , {r2}");
+            Console.WriteLine($"r1 r2 출력 ㅣ {r1} , {r2}"); // out을 쓰면 참조되서 변수가 저장됨 값 자체가 바뀜 
+            // 약간 c언어의 static과 비슷한 개념이라 보면 됨 
 
+
+
+            // 함수 이름이 같아도 반환형이 다르면 함수를 다른 함수로 쓸 수 있는데 이를 ( 오버로딩 이라고 함 ) 
         }
 
 
