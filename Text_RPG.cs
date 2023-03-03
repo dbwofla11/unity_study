@@ -3,12 +3,40 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MySql.Data.MySqlClient;
+
 
 // TEXT RPG 만들어 보기 
 namespace CShap
 {
     internal class Text_RPG
     {
+        public static void db_conn()
+        {
+            using (MySqlConnection connection = new MySqlConnection("Server=localhost;Port=3300;Database=trpg;Uid=root;Pwd=비번은 빼서 다시 적으셈"))
+            {
+                string insertQuery = "select * from trpg_monster";
+                try//예외 처리
+                {
+                    connection.Open(); // db 연결 
+                    MySqlCommand command = new MySqlCommand(insertQuery, connection); // 쿼리문 연결 
+
+                    // 만약에 내가처리한 Mysql에 정상적으로 들어갔다면 메세지를 보여주라는 뜻이다
+                    if (command.ExecuteNonQuery() == 1)
+                    {
+                        Console.WriteLine("인서트 성공");
+                        Console.WriteLine(command);
+                    }
+                    else Console.WriteLine("인서트 실패");
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("실패");
+                    Console.WriteLine(ex.ToString());
+                }
+            }
+        }
+
         struct Player // 구조체 사용해서 플레이어 만들기 => 구조체 사용법은 c언어와 같음 
         {
             public int hp;
@@ -101,7 +129,7 @@ namespace CShap
 
             Console.Clear();
             // 메이플 월드 시작 
-
+            db_conn();
 
 
 
