@@ -5,29 +5,30 @@ using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
 
-
 // TEXT RPG 만들어 보기 
 namespace CShap
 {
     internal class Text_RPG
     {
+             
         public static void db_conn()
         {
-            using (MySqlConnection connection = new MySqlConnection("Server=localhost;Port=3300;Database=trpg;Uid=root;Pwd=비번은 빼서 다시 적으셈"))
+            using (MySqlConnection connection = new MySqlConnection("Server=localhost;Port=3300;Database=trpg;Uid=root;Pwd=m8161516")) 
             {
-                string insertQuery = "select * from trpg_monster";
                 try//예외 처리
                 {
-                    connection.Open(); // db 연결 
-                    MySqlCommand command = new MySqlCommand(insertQuery, connection); // 쿼리문 연결 
+                    connection.Open();
+                    string sql = "SELECT * FROM trpg_monster";
+ 
+                    MySqlCommand cmd = new MySqlCommand(sql, connection);
+                    MySqlDataReader table = cmd.ExecuteReader();
 
-                    // 만약에 내가처리한 Mysql에 정상적으로 들어갔다면 메세지를 보여주라는 뜻이다
-                    if (command.ExecuteNonQuery() == 1)
+                    while (table.Read())
                     {
-                        Console.WriteLine("인서트 성공");
-                        Console.WriteLine(command);
+                        Console.WriteLine("{0} {1} {2} {3}", table["id"], table["monster_name"], table["monster_hp"] , table["monster_attack"]);
                     }
-                    else Console.WriteLine("인서트 실패");
+                    table.Close();
+
                 }
                 catch (Exception ex)
                 {
@@ -35,6 +36,11 @@ namespace CShap
                     Console.WriteLine(ex.ToString());
                 }
             }
+        }
+
+        public static void select_monster()
+        {
+            
         }
 
         struct Player // 구조체 사용해서 플레이어 만들기 => 구조체 사용법은 c언어와 같음 
@@ -121,15 +127,19 @@ namespace CShap
             }
             Console.Clear();
 
-            // 캐릭터 생성 
+            // 캐릭터 생성 및 캐릭터 정보창 -> 함수로 빼서 커맨드 입력하면 들어가게끔 만들기 
             Console.WriteLine("================================================");
             Console.WriteLine($"당신이 선택한 직업은 {직업}입니다.");
             generate_player( 직업 , out player.hp, out player.attack);
             Console.WriteLine($"당신의 체력은 {player.hp}이며 공격력은{player.attack}입니다");
 
-            Console.Clear();
-            // 메이플 월드 시작 
+            // 여기서 바로 지워지는데 공백하나 받아야 될듯 
+
+            Console.WriteLine("================================================");
+            
+            // db 연결 
             db_conn();
+
 
 
 
