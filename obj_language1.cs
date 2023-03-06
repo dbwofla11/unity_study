@@ -13,12 +13,18 @@ namespace CShap
     // 객체는 속성과 기능을 나눠서 구현을 할 수 있음 
     public class Knight // 전사의 객체 설계도 ( 클래스 )
     {
+        static public int id_cnt = 1; // 아이디 만들때 static 사용 
+
+        public int id;
         public int hp;
         public int attack;
 
         // 생성자 - 기사 
         public Knight()
         {
+            id = id_cnt;
+            id_cnt++;
+
             hp = 10;
             attack = 1000;
             Console.WriteLine("생성자 호출 ");
