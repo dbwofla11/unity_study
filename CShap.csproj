@@ -12,6 +12,8 @@
     <Compile Remove="for_practice.cs" />
     <Compile Remove="function_pre.cs" />
     <Compile Remove="if_practice.cs" />
+    <Compile Remove="obj_language1.cs" />
+    <Compile Remove="obj_language2.cs" />
     <Compile Remove="Program.cs" />
     <Compile Remove="Text_RPG.cs" />
   </ItemGroup>
@@ -20,6 +22,8 @@
     <None Include="C_SHAP기초문법\for_practice.cs" />
     <None Include="C_SHAP기초문법\if_practice.cs" />
     <None Include="C_SHAP기초문법\Program.cs" />
+    <None Include="obj_language1.cs" />
+    <None Include="obj_language2.cs" />
     <None Include="Text_RPG.cs" />
   </ItemGroup>
 
