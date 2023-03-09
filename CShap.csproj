@@ -9,6 +9,8 @@
 
   <ItemGroup>
     <Compile Remove=".cs" />
+    <Compile Remove="Change_class_pre.cs" />
+    <Compile Remove="C_SHAP객체지향연습_class연습\Change_class_pre.cs" />
     <Compile Remove="C_SHAP객체지향연습_class연습\obj_language1.cs" />
     <Compile Remove="C_SHAP객체지향연습_class연습\obj_language2.cs" />
     <Compile Remove="C_SHAP객체지향연습_class연습\obj_lan_private.cs" />
@@ -23,13 +25,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="C_SHAP객체지향연습_class연습\Change_class_pre.cs" />
     <None Include="C_SHAP객체지향연습_class연습\obj_language1.cs" />
     <None Include="C_SHAP객체지향연습_class연습\obj_language2.cs" />
     <None Include="C_SHAP객체지향연습_class연습\obj_lan_private.cs" />
     <None Include="C_SHAP기초문법\for_practice.cs" />
     <None Include="C_SHAP기초문법\if_practice.cs" />
     <None Include="C_SHAP기초문법\Program.cs" />
-    <None Include="Text_RPG.cs" />
+    <CodeAnalysisDictionary Include="C_SHAP_텍스트RPG_version1\Text_RPG.cs" />
   </ItemGroup>
 
 	    
